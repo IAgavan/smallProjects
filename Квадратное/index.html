@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Квадратное уравнение</title>
+  <style>
+    input {
+      width: 4rem !important;
+    }
+
+    label {
+      font-size: 2rem;
+    }
+  </style>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body class="bg-dark">
+  <div class="container bg-secondary rounded p-2 ">
+    <h1 class="mx-auto text-center text-dark">Квадраное уравнение</h1>
+    <div class="text bg-info rounded p-3 mb-2">
+      <p><strong>Квадратное уравнение</strong> — уравнение вида <strong>ax<sup>2</sup> + bx + c = 0</strong>, где
+        <strong>a</strong>, <strong>b</strong>, <strong>c</strong> — некоторые числа (<strong>a ≠ 0</strong>),
+        <strong>x</strong> — неизвестное.</p>
+      <p>Числа <strong>a</strong>, <strong>b</strong>, <strong>c</strong> называются
+        коэффициентами квадратного уравнения.</p>
+      <ul>
+        <li> <strong>a</strong> называется первым
+          коэффициентом;</li>
+        <li> <strong>b</strong> называется вторым
+          коэффициентом;</li>
+        <li> <strong>c</strong> называется свободным членом.</li>
+      </ul>
+      <p>Корни квадратного уравнения зависят от знака дискриминанта (<strong>D</strong>) </p>
+    </div>
+    <div class="inputForm bg-info rounded p-2 mb-2">
+      <p class="m-0">Введите коэффициенты <strong>a</strong>, <strong>b</strong> и <strong>c</strong>.</p>
+      <i>Если коэффициент не введен, он приравнивается к 0</i>
+      <form class="mb-2 p-2 form form-inline" name="coeficientsGetter">
+        <input class="form-control mx-1 px-2" maxlength="4" name="a" placeholder="a">
+        <label for="a">x<sup>2</sup>+</label>
+        <input class="form-control mx-1 px-2" maxlength="4" name="b" placeholder="b">
+        <label for="a">x +</label>
+        <input class="form-control mx-1 px-2" maxlength="4" name="c" placeholder="c">
+        <label for="c">=0</label>
+        <button type='submit' class="btn btn-dark ml-auto" id="solveButton">Решить</button>
+      </form>
+    </div>
+    <div class="output bg-success rounded p-2 d-none mb-2" id="output">
+
+    </div>
+    <div class="bg-success rounded p-2 d-none" id="chartBox">
+      <p>Функция вида <strong>y = ax<sup>2</sup> + bx + c </strong></p>
+      <div id="curve_chart" style="width: 100%"></div>
+    </div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

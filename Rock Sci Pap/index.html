@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://kit.fontawesome.com/0bfa403d52.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>КмНБ</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>К-Н-Б</h1>
+      <button id="restart-btn">Restart Game</button>
+      <div class="scores">
+        <p>Игрок: <span id='playerScore'>0</span></p>
+        <p>Компьютер: <span id='computerScore'>0</span></p>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h2>Сделать должен ты выбор!</h2>
+        <div class="choices">
+          <i id="rock" class="choice fas fa-hand-rock fa-5x"></i>
+          <i id="scissors" class="choice fas fa-hand-scissors fa-5x"></i>
+          <i id="paper" class="choice fas fa-hand-paper fa-5x"></i>
+        </div>
+      </div>
+    
+      <div class="result hidden">
+        <div class="result-content" id="result">
+          <h1></h1>
+          <i class="choice fas fa-10x"></i>
+          <h2></h2>
+        </div>
+      </div>
+    </main>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

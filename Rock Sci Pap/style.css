@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+header h1 {
+  background-color: cadetblue;
+}
+
+#restart-btn {
+  margin: 1rem;
+  padding: 0.4rem;
+}
+
+.scores {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.scores p {
+  margin: 0 1rem;
+  padding: 0.4rem;
+  width: 30%;
+  border: 2px solid gray;
+}
+
+main {
+  display: flex;
+}
+
+main div {
+  width: 50%;
+  text-align: center;
+}
+.choices,
+.result-content{
+  margin: auto;
+}
+i:hover {
+  color: blue;
+}
+
+
+
+.hidden {
+  display: none;
+}
